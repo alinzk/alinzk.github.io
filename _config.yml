@@ -1,0 +1,55 @@
+###############
+# Site settings
+###############
+
+title: 'Ali Nawaz'
+description: >
+  A software engineer with more than two years of experience in professional environment. My honed skills include problem
+  solving and Rails framework. Also, I really converse well with jQuery, HTML and CSS.
+
+keywords: >
+  ali nawaz, ruby on rails, devsinc, comsats, eduleaf
+
+baseurl: ''
+url: 'https://alinawaz.me' # the base hostname & protocol for your site
+
+person:
+  name: 'Ali Nawaz'
+  family_name: 'Nawaz'
+  given_name: 'Ali'
+  city: 'Lahore'
+  country: 'Pakistan'
+  education: 'studied Computer Science at COMSATS University, Lahore *(2009 - 2013)*'
+  cwork: 'leads developement at [eduleaf](https://eduleaf.com){:target="_blank"}'
+
+developer:
+  - 'builds web, mobile and desktop applications'
+  - 'is pretty seriously seeing **Ruby & Ruby on Rails**'
+  - 'likes to spice things up with **JavaScript, HTML & CSS**'
+  - 'enjoys the occasional dinner-and-a-movie with **Java(SE) & JRuby**'
+  - 'has had flings with **Java(Android), C & PHP**'
+
+professional:
+  - >
+    shapes the future of collaborative exasm grading for teachers at
+    [eduleaf](https://eduleaf.com/){:target='_blank'},
+    [DevsInc](http://devsinc.com){:target='_blank'}
+    *(Senior Software Enginner; Jan. 2015 - present)*
+
+  - >
+    built web apps using Ruby on Rails at
+    [DevsInc](http://devsinc.com){:target='_blank'}
+    *(Software Enginner; Oct. 2013 - Dec. 2014)*
+
+  - 'used to do freelance Java SE development'
+
+social:
+  github_username: 'ali-nawaz'
+  github_pages_repo_url: 'https://github.com/ali-nawaz/ali-nawaz.github.io'
+  linkedin_url: 'http://pk.linkedin.com/in/alinawazcs'
+  email: 'hi@alinawaz.me'
+  email_text: 'hi at alinawaz.me'
+
+
+# Build settings
+markdown: kramdown

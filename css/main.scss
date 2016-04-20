@@ -1,0 +1,127 @@
+---
+# It needs front matter
+---
+@charset "utf-8";
+@import "bootstrap";
+
+$base-font-family: "CourierStd", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 500;
+
+$bold-font-weight: bold;
+
+$text-color:       black;
+$background-color: #fff;
+$text-highlight:   #FF0;
+
+$brand-color:      #5283ba;
+$top-border-height: 3px;
+$heading-size:     30px;
+
+
+// FONTS INCLUSION
+$font-name: 'CourierStd';
+$font-path-file-name: '{{ baseurl }}/fonts/courier-std/CourierStd';
+
+@font-face {
+  font-family: $font-name;
+  font-weight: normal;
+  font-style: normal;
+  src: url($font-path-file-name+'.eot'); /* IE9 Compat Modes */
+  src: url($font-path-file-name+'.eot?#iefix') format('embedded-opentype'),
+       url($font-path-file-name+'.woff') format('woff'),
+       url($font-path-file-name+'.ttf')  format('truetype'),
+       url($font-path-file-name+'.svg#font_name') format('svg');
+}
+
+// MAIN CSS
+body {
+  background: $background-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  color: $text-color;
+
+  &:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $top-border-height;
+    background-color: $brand-color;
+    z-index: 999;
+    content: " ";
+  }
+}
+
+h1, h2 {
+  margin-top: 0;
+  font-size: $heading-size;
+  font-weight: normal;
+  color: $brand-color;
+}
+
+b, strong {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: underline;
+  color: $text-color;
+  font-weight: $bold-font-weight;
+
+  &:hover, &:focus {
+    color: $text-color;
+    outline: none;
+  }
+}
+
+.default-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  text-align: right;
+
+  h1 {
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 43px;
+  }
+
+  @media(max-width: 767px){
+    text-align: left;
+    align-items: baseline;
+  }
+}
+
+
+.traits {
+  position: absolute;
+  left: auto;
+  top: 15%;
+  display: block;
+  text-align: left;
+  padding-left: 0;
+  overflow-y: scroll;
+  background: $background-color;
+
+  .name {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding-bottom: 15px;
+    }
+  }
+
+  @media(min-width: 768px){
+    top: 50%;
+  }
+}
+

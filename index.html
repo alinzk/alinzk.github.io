@@ -1,0 +1,87 @@
+---
+layout: default
+---
+{% assign person = site.person %}
+{% assign social = site.social %}
+
+<div class="traits col-xs-9 col-sm-7 col-xs-offset-3 col-sm-offset-5">
+  <section id="person">
+    <h2>is a person</h2>
+    <ul>
+      <li>lives in beautiful {{ person.city }}, the {{ person.country }}</li>
+      <li>{{ person.cwork | markdownify }}</li>
+      <li>{{ person.education | markdownify }}</li>
+    </ul>
+  </section>
+
+  <section id="developer">
+    <h2>
+      <span class="name">{{ person.name }}</span>
+      <span class="verb">is</span> a developer
+    </h2>
+    <ul>
+      {% for dev_trait in site.developer %}
+        <li>
+          <span class="name">{{ person.name }}</span>
+          {{ dev_trait | markdownify }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="professional">
+    <h2>
+      <span class="name">{{ person.name }}</span>
+      <span class="verb">is</span> a professional
+    </h2>
+    <ul>
+      {% for pro_trait in site.professional %}
+        <li>
+          <span class="name">{{ person.name }}</span>
+          {{ pro_trait | markdownify }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="social">
+    <h2>
+      <span class="name">{{ person.name }}</span>
+      is social
+    </h2>
+    <ul>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        shares code via
+        <a href="https://github.com/{{ social.github_username }}" target="_blank">
+          github.com/{{ social.github_username }}
+        </a>
+      </li>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        prefers to connect on
+        <a href="{{ social.linkedin_url }}" target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        reads email sent to
+        <a href="mailto:{{ social.email }}">{{ social.email_text }}</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <ul>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        hosts
+        <a href="{{ social.github_pages_repo_url }}" target="_blank">this website</a>
+        on GitHub Pages
+      </li>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        holds the copyright to this site, obviously
+      </li>
+    </ul>
+  </section>
+</div>
