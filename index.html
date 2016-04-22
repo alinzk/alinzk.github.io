@@ -4,13 +4,22 @@ layout: default
 {% assign person = site.person %}
 {% assign social = site.social %}
 
-<div class="traits col-xs-9 col-sm-7 col-xs-offset-3 col-sm-offset-5">
+<div class="traits col-xs-9 col-sm-7 col-xs-offset-2_5 col-sm-offset-5">
   <section id="person">
     <h2>is a person</h2>
     <ul>
-      <li>lives in beautiful {{ person.city }}, the {{ person.country }}</li>
-      <li>{{ person.cwork | markdownify }}</li>
-      <li>{{ person.education | markdownify }}</li>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        lives in beautiful {{ person.city }}, the {{ person.country }}
+      </li>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        {{ person.cwork | markdownify }}
+      </li>
+      <li>
+        <span class="name">{{ person.name }}</span>
+        {{ person.education | markdownify }}
+      </li>
     </ul>
   </section>
 
