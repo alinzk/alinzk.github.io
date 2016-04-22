@@ -20,7 +20,7 @@ person:
   city: 'Lahore'
   country: 'Pakistan'
   education: 'studied Computer Science at COMSATS University, Lahore *(2009 - 2013)*'
-  cwork: 'leads developement at [eduleaf](https://eduleaf.com){:target="_blank"}'
+  cwork: 'leads developement at [eduleaf](https://v2.eduleaf.com){:target="_blank"}'
 
 developer:
   - 'builds web, mobile and desktop applications'
@@ -32,7 +32,7 @@ developer:
 professional:
   - >
     shapes the future of collaborative exam grading for teachers at
-    [eduleaf](https://eduleaf.com/){:target='_blank'},
+    [eduleaf](https://v2.eduleaf.com/){:target='_blank'},
     [DevsInc](http://devsinc.com){:target='_blank'}
     *(Senior Software Enginner; Jan. 2015 - present)*
 
