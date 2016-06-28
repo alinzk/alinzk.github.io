@@ -4,21 +4,25 @@ layout: default
 {% assign person = site.person %}
 {% assign social = site.social %}
 
-<div class="traits col-xs-9 col-sm-7 col-xs-offset-2_5 col-sm-offset-5">
+<div class="traits col-xs-9 col-sm-7 col-xs-offset-2_5 col-sm-offset-5"
+  itemscope itemtype="http://schema.org/Person" itemref="{{ person.nameref }}">
   <section id="person">
     <h2>is a person</h2>
     <ul>
-      <li>
+      <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
         <span class="name">{{ person.name }}</span>
-        lives in beautiful {{ person.city }}, the {{ person.country }}
+        lives in beautiful
+        <span itemprop="addressLocality">{{ person.city }}</span>, the
+        <span itemprop="addressCountry">{{ person.country }}</span>
       </li>
-      <li>
+      <li itemprop="worksFor" itemscope itemtype="http://schema.org/Corporation">
+        <span itemprop="employee" itemscope itemtype="http://schema.org/Person" itemref="{{ person.nameref }}"></span>
         <span class="name">{{ person.name }}</span>
-        {{ person.cwork | markdownify }}
+        <span itemprop="description">{{ person.cwork | markdownify }}</span>
       </li>
-      <li>
+      <li itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
         <span class="name">{{ person.name }}</span>
-        {{ person.education | markdownify }}
+        <span itemprop="description">{{ person.education | markdownify }}</span>
       </li>
     </ul>
   </section>
@@ -74,7 +78,7 @@ layout: default
       <li>
         <span class="name">{{ person.name }}</span>
         reads email sent to
-        <a href="mailto:{{ social.email }}">{{ social.email_text }}</a>
+        <a href="mailto:{{ social.email }}"><span itemprop="email">{{ social.email_text }}</span></a>
       </li>
     </ul>
   </section>

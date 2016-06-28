@@ -21,6 +21,8 @@ person:
   country: 'Pakistan'
   education: 'studied Computer Science at COMSATS University, Lahore *(2009 - 2013)*'
   cwork: 'leads developement at [eduleaf](https://v2.eduleaf.com){:target="_blank"}'
+  nameref: 'alinawaz'
+  gender: 'Male'
 
 developer:
   - 'builds web, mobile and desktop applications'
@@ -48,7 +50,7 @@ social:
   github_pages_repo_url: 'https://github.com/ali-nawaz/ali-nawaz.github.io'
   linkedin_url: 'http://pk.linkedin.com/in/alinawazcs'
   email: 'hi@alinawaz.me'
-  email_text: 'hi at alinawaz.me'
+  email_text: '&#104;&#105;&#064;&#097;&#108;&#105;&#110;&#097;&#119;&#097;&#122;&#046;&#109;&#101;'
 
 
 # Build settings
