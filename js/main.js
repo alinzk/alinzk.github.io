@@ -6,9 +6,9 @@ $(function(){
   $(window).on('load resize', function() {
     var top = h1.position().top;
     var bottom = $(window).height() - top - (h1.height());
-    var adj = 25;
+    var adj = 15;
 
-    $('.traits').css('margin-bottom', (bottom - adj)+'px');
+    $('section').last().css('margin-bottom', (bottom - adj)+'px');
   });
 
 
